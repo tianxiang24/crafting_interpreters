@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="601adc6a-d1d4-4c06-ac31-ce40ab56e08d" name="Changes" comment="">
+    <list default="true" id="601adc6a-d1d4-4c06-ac31-ce40ab56e08d" name="Changes" comment="feat(lox): scanning">
+      <change afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/AstPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/tool/GenerateAst.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Lox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Lox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Scanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/TokenType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/TokenType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +32,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/15978/Desktop/projects/crafting_interperters/lox/src/com/craftinginterpreters/lox",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\15978\Desktop\projects\crafting_interperters\lox\src\com\craftinginterpreters\lox" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.AstPrinter">
+    <configuration name="AstPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.craftinginterpreters.lox.AstPrinter" />
+      <module name="lox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.craftinginterpreters.lox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenerateAst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.craftinginterpreters.tool.GenerateAst" />
+      <module name="lox" />
+      <option name="PROGRAM_PARAMETERS" value=".\src\com\craftinginterpreters\lox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.craftinginterpreters.tool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Lox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.craftinginterpreters.lox.Lox" />
       <module name="lox" />
@@ -58,6 +89,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AstPrinter" />
+        <item itemvalue="Application.GenerateAst" />
         <item itemvalue="Application.Lox" />
       </list>
     </recent_temporary>
@@ -71,8 +104,16 @@
       <option name="presentableId" value="Default" />
       <updated>1661570447586</updated>
       <workItem from="1661570452246" duration="10740000" />
-      <workItem from="1661658556275" duration="2006000" />
+      <workItem from="1661658556275" duration="10306000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(lox): scanning">
+      <created>1662126803511</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662126803511</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +129,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(lox): scanning" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(lox): scanning" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
