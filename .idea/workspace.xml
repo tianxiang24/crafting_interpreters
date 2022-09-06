@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="601adc6a-d1d4-4c06-ac31-ce40ab56e08d" name="Changes" comment="feat(lox): scanning">
-      <change afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/AstPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/tool/GenerateAst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Lox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Lox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +37,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/15978/Desktop/projects/crafting_interperters/lox/src/com/craftinginterpreters/lox",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+    "last_opened_file_path": "/Users/hgy_bigo/Desktop/learning/crafting_interpreters",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -46,7 +46,7 @@
       <recent name="C:\Users\15978\Desktop\projects\crafting_interperters\lox\src\com\craftinginterpreters\lox" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AstPrinter">
+  <component name="RunManager" selected="Application.Lox">
     <configuration name="AstPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.craftinginterpreters.lox.AstPrinter" />
       <module name="lox" />
@@ -89,9 +89,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Lox" />
         <item itemvalue="Application.AstPrinter" />
         <item itemvalue="Application.GenerateAst" />
-        <item itemvalue="Application.Lox" />
       </list>
     </recent_temporary>
   </component>
@@ -105,6 +105,7 @@
       <updated>1661570447586</updated>
       <workItem from="1661570452246" duration="10740000" />
       <workItem from="1661658556275" duration="10306000" />
+      <workItem from="1662437435746" duration="4099000" />
     </task>
     <task id="LOCAL-00001" summary="feat(lox): scanning">
       <created>1662126803511</created>

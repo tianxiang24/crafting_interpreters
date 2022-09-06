@@ -12,7 +12,7 @@ public class Lox {
     static boolean hadError;
 
     public static void main(String[] args) throws IOException {
-        if(args.length > 1) {
+        if (args.length > 1) {
             System.out.println("Usage: jlox [script]");
             System.exit(64);
         } else if (args.length == 1) {
@@ -26,10 +26,10 @@ public class Lox {
         InputStreamReader input = new InputStreamReader(System.in);
         BufferedReader bufferedReader = new BufferedReader(input);
 
-        for(;;) {
+        for (; ; ) {
             System.out.println("> ");
             String line = bufferedReader.readLine();
-            if(line == null) break;
+            if (line == null) break;
             run(line);
             hadError = false;
         }
@@ -45,8 +45,14 @@ public class Lox {
     private static void run(String s) {
         Scanner scanner = new Scanner(s);
         List<Token> tokens = scanner.scanTokens();
+        Parser parser = new Parser(tokens);
+        Expr expression = parser.parse();
 
-        for(Token token: tokens) {
+        if (hadError) return;
+
+        System.out.println(new AstPrinter().print(expression));
+
+        for (Token token : tokens) {
             System.out.println(token);
         }
     }
@@ -60,5 +66,13 @@ public class Lox {
                 "[line " + line + "] Error" + where + ": " + message
         );
         hadError = true;
+    }
+
+    static void error(Token token, String message) {
+        if (token.type == TokenType.EOF) {
+            report(token.line, " at end", message);
+        } else {
+            report(token.line, " at '" + token.lexeme + "'", message);
+        }
     }
 }
